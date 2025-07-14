@@ -1,0 +1,37 @@
+{
+  "name": "playwright-test-controller",
+  "description": "Servidor MCP para listar y ejecutar pruebas Playwright desde lenguaje natural.",
+  "version": "1.0",
+  "methods": [
+    {
+      "name": "listTests",
+      "description": "Devuelve todos los tests disponibles."
+    },
+    {
+      "name": "findMatchingTest",
+      "description": "Encuentra el test que más se parece a un prompt en lenguaje natural.",
+      "params": {
+        "prompt": "string"
+      },
+      "returns": {
+        "id": "string",
+        "name": "string",
+        "description": "string",
+        "path": "string"
+      }
+    },
+    {
+      "name": "runTest",
+      "description": "Ejecuta un test por ruta absoluta relativa al proyecto.",
+      "params": {
+        "path": "string"
+      },
+      "returns": {
+        "success": "boolean",
+        "stdout": "string",
+        "stderr": "string",
+        "code": "number"
+      }
+    }
+  ]
+}
