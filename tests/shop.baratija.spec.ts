@@ -32,5 +32,9 @@ test.describe("Proceso de compra en página LaBaratija", () => {
         paymentPage.cleanCart();
     });
 
+    test("Fallar prueba a proposito", async ({ page }, testInfo) => {
+        expect(1).toBe(2);
+    });
+
 
 });

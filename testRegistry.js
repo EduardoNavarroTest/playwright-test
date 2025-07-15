@@ -26,5 +26,5 @@ fs.readdirSync(TESTS_DIR)
       });
     }
   });
-
+  
 export default testEntries;
