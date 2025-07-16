@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import ShopPage from '../pages/mercadolibre/ShopPage';
 
 
-test.describe("Proceso de compra en reinti-autos", () => {    
+test.describe("Proceso de en mercadolibre", () => {    
     let shopPage: ShopPage;
     const URL: string = `https://mercadolibre.com.co`;
 
